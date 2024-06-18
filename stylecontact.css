@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.heading {
+    text-decoration: underline;
+    text-decoration-color: rgb(221, 150, 18);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    transition: background 0.5s, color 0.5s; /* Add transition */
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: orange;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background 0.5s; /* Add transition */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+header .logo img {
+    height: 100px;
+    width: auto;
+    margin-right: 10px;
+    border-radius: 0%;
+}
+
+header ul {
+    display: flex;
+    gap: 100px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 700; /* Increased font weight */
+    font-size: 2em;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.contact-me {
+    padding: 100px 20px;
+    margin-top: 100px;
+    transition: background 0.5s, color 0.5s; /* Add transition */
+}
+
+.contact-me h1 {
+    font-size: 3em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: color 0.5s; /* Add transition */
+}
+
+.contact-me section {
+    margin-bottom: 40px;
+}
+
+.contact-me h2 {
+    font-size: 2.5em;
+    color: orange;
+    margin-bottom: 10px;
+    transition: color 0.5s; /* Add transition */
+}
+
+.contact-me p {
+    font-size: 1.5em;
+    color: #666;
+    line-height: 1.6;
+    transition: color 0.5s; /* Add transition */
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+    transition: color 0.5s; /* Add transition */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background 0.5s, color 0.5s; /* Add transition */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5em;
+    color: #fff;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: darkorange;
+}
+
+.DayNight {
+    position: relative;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 2em;
+    transition: background 0.5s, color 0.5s; /* Add transition */
+}
+.DayNight ion-icon:nth-child(2), .contact-me.night .DayNight ion-icon:nth-child(1) {
+    display: none;
+}
+.contact-me.night .DayNight ion-icon:nth-child(2) {
+    display: block;
+}
+.contact-me.night {
+    background: #333;
+}
+.contact-me.night .DayNight {
+    color: #fff;
+    background: #444;
+}
+.contact-me.night .heading h1,
+.contact-me.night .info p,
+.contact-me.night .form-group label,
+.contact-me.night .contact-form p,
+.contact-me.night .or p {
+    color: #fff;
+}
+.or {
+    text-align: center;  /* Center aligns inline content */
+    margin: 20px 0;      /* Optional: adds some vertical margin */
+}
+
+.or p {
+    display: inline-block; /* Ensures inline element behaves like a block */
+    margin: 0;             /* Remove default paragraph margins */
+    font-size: 1.2em; 
+    font-weight: 10px;     /* Optional: adjust font size if needed */
+    color: #333;           /* Color for light mode */
+    transition: color 0.5s; /* Add transition for smooth color change */
+}
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.fb-button {
+    background-color: #3b5998;
+}
+
+.fb-button:hover {
+    background-color: #2d4373;
+}
+
+.ig-button {
+    background-color: #e4405f;
+}
+
+.ig-button:hover {
+    background-color: #c32f53;
+}
+
+.gmail-button {
+    background-color: #db4437;
+}
+
+.gmail-button:hover {
+    background-color: #c23321;
+}
