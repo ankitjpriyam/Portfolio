@@ -1,0 +1,206 @@
+/* Add this CSS to your existing style.css or include it in your <style> tag */
+.chat {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    font-size: 1.25em;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.chat:hover {
+    background-color: orangered;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: orange;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+header .logo img {
+    height: 100px;
+    width: auto;
+    margin-right: 10px;
+    border-radius: 0%;
+}
+
+header ul {
+    display: flex;
+    gap: 100px;
+}
+
+header ul li {
+    list-style: none;
+}
+.nav-links:hover{
+    color: orangered;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 700; /* Increased font weight */
+    font-size: 2em;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+    background: #fff;
+    transition: 0.5s;
+    padding-top: 80px; /* To accommodate the fixed header height */
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 700px;
+    text-align: left;
+}
+
+.content h2 {
+    font-size: 3.5em;
+    color: #333;
+    transition: 0.5s;
+}
+
+.content h2 span {
+    color: orange;
+    font-size: 1.5em;
+}
+.content .larger-text{
+    color: black;
+}
+
+.larger-text {
+    
+    font-size: 3em; /* Adjust this size as needed */
+}
+.content .hey{
+      font-weight: 20;
+}
+.content p {
+    font-size: 1.5em;
+    color: #666;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+.content button {
+    position: relative;
+    background: orange;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    margin-right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+
+.profile img {
+    border: 5px solid orange; /* Change color to your preference */
+    border-radius: 0%; /* Makes the image circular */
+    width: 400px; /* Adjust the size as needed */
+    height: 400px; /* Ensures the image is square */
+    object-fit: cover; /* Ensures the image covers the entire element */
+    transition: border 0.3s ease-in-out;
+    margin-left: 10px; /* Smooth transition for border changes */
+}
+
+.profile img:hover {
+    border: 5px solid orangered; /* Change border color on hover */
+}
+
+.DayNight {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 2em;
+}
+.DayNight ion-icon:nth-child(2),.banner.night .DayNight ion-icon:nth-child(1) {
+    display: none;
+}
+.banner.night .DayNight ion-icon:nth-child(2){
+    display: block;
+}
+.banner.night{
+    background: #333;
+}
+.banner.night .DayNight{
+    color: #fff;
+    background: #444;
+}
+.banner.night .content h2,
+.banner.night .content p,
+.banner.night .content button.chat,
+.banner.night .larger-text{
+    color: #fff;
+}
+
+
+
+
